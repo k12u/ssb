@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Facebook messenger</title>
+<meta http-equiv="refresh" content="1; url=https://facebook.com/messages/" />
+<style type="text/css">
+body {background-color: #e5e5e5;}
+.center {text-align: center; margin-top: 310px;}
+.welcome {font-family: "Arial";font-size: 30px; }
+</style>
+</head>
+<body>
+<div class="center">
+  <span class="welcome">Redirecting..</span>
+</div>
+<script>
+    var gui = require('nw.gui');
+    var mb = new gui.Menu({type:"menubar"});
+    mb.createMacBuiltin("Facebook messenger");
+    gui.Window.get().menu = mb;
+</script>
+</body>
+</html>

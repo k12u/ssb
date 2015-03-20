@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Wrike</title>
+<meta http-equiv="refresh" content="1; url=https://www.wrike.com/workspace.htm" />
+<style type="text/css">
+body {background-color: #e5e5e5;}
+.center {text-align: center; margin-top: 310px;}
+.welcome {font-family: "Arial";font-size: 30px; }
+</style>
+</head>
+<body>
+<div class="center">
+  <span class="welcome">Welcome to Wrike.app</span>
+</div>
+</body>
+<script>
+    var gui = require('nw.gui');
+    var mb = new gui.Menu({type:"menubar"});
+    mb.createMacBuiltin("Wrike");
+    gui.Window.get().menu = mb;
+</script>
+</html>
