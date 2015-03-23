@@ -1,22 +1,27 @@
 <html>
 <head>
 <title>Facebook messenger</title>
-<meta http-equiv="refresh" content="1; url=https://facebook.com/messages/" />
 <style type="text/css">
-body {background-color: #e5e5e5;}
-.center {text-align: center; margin-top: 310px;}
-.welcome {font-family: "Arial";font-size: 30px; }
+    body {
+        margin: 0;
+    }
 </style>
 </head>
 <body>
-<div class="center">
-  <span class="welcome">Redirecting..</span>
-</div>
+<iframe id="root" src="https://facebook.com/messages/" width="100%" height="100%" nwdisable="1" nwfaketop="1">
+</iframe>
 <script>
     var gui = require('nw.gui');
     var mb = new gui.Menu({type:"menubar"});
     mb.createMacBuiltin("Facebook messenger");
     gui.Window.get().menu = mb;
+
+    var $iframe = document.getElementsByTagName('iframe')[0];
+    $iframe.onload = function(){
+        $iframe.contentWindow.document.getElementById("pagelet_sidebar").style.display = "none";
+        $iframe.contentWindow.document.getElementById("pagelet_bluebar").style.display = "none";
+        $iframe.contentWindow.document.getElementById("rightCol").style.display = "none";
+    };
 </script>
 </body>
 </html>
