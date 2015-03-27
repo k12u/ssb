@@ -9,8 +9,19 @@ module.exports = function(grunt) {
 					linux32: false,
 					linux64: false,
 					mac_icns: './gmail_src/icon.icns',
-					zip: true,
-					credits: './gmail_src/credits.html'
+					zip: true
+				},
+				src: ['./gmail_src/**/*']
+			},
+			gcal: {
+				options: {
+					build_dir: './webkitbuilds',
+					mac: true,
+					win: false,
+					linux32: false,
+					linux64: false,
+					mac_icns: './gcal_src/icon.icns',
+					zip: true
 				},
 				src: ['./gmail_src/**/*']
 			},
@@ -22,8 +33,7 @@ module.exports = function(grunt) {
 					linux32: false,
 					linux64: false,
 					mac_icns: './google_apps_src/icon.icns',
-					zip: true,
-					credits: './google_apps_src/credits.html'
+					zip: true
 				},
 				src: ['./google_apps_src/**/*']
 			},
@@ -35,8 +45,7 @@ module.exports = function(grunt) {
 					linux32: false,
 					linux64: false,
 					mac_icns: './fbm_src/icon.icns',
-					zip: true,
-					credits: './fbm_src/credits.html'
+					zip: true
 				},
 				src: ['./fbm_src/**/*']
 			},
@@ -48,8 +57,7 @@ module.exports = function(grunt) {
 					linux32: false,
 					linux64: false,
 					mac_icns: './wrike_src/icon.icns',
-					zip: true,
-					credits: './wrike_src/credits.html'
+					zip: true
 				},
 				src: ['./wrike_src/**/*']
 			}

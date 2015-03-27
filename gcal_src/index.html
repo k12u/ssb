@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Google Calendar</title>
+<meta http-equiv="refresh" content="1; url=https://www.google.com/calendar/render" />
+<style type="text/css">
+body {background-color: #e5e5e5;}
+.center {text-align: center; margin-top: 310px;}
+.welcome {font-family: "Arial";font-size: 30px; }
+</style>
+</head>
+<body>
+<div class="center">
+  <span class="welcome">Welcome to Google Calendar.app</span>
+</div>
+<script>
+    var gui = require('nw.gui');
+    var mb = new gui.Menu({type:"menubar"});
+    mb.createMacBuiltin("Gmail");
+    gui.Window.get().menu = mb;
+</script>
+</body>
+</html>
