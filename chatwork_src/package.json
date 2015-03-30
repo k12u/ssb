@@ -1,0 +1,17 @@
+{
+    "main": "index.html",
+    "name": "Chatwork",
+    "version": "1.0.0",
+    "node-remote": "https://accounts.google.com",
+    "window": {
+        "toolbar": false,
+        "frame": true,
+        "width": 1100,
+        "height": 650,
+        "position": "middle",
+        "icon": "icon.png"
+    },
+    "webkit": {
+        "plugin": true
+    }
+}

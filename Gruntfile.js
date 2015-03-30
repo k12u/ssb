@@ -49,6 +49,18 @@ module.exports = function(grunt) {
 				},
 				src: ['./fbm_src/**/*']
 			},
+			chatwork: {
+				options: {
+					build_dir: './webkitbuilds',
+					mac: true,
+					win: false,
+					linux32: false,
+					linux64: false,
+					mac_icns: './chatwork_src/icon.icns',
+					zip: true
+				},
+				src: ['./chatwork_src/**/*']
+			},
 			wrike: {
 				options: {
 					build_dir: './webkitbuilds',
