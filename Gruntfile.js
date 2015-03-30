@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 					mac_icns: './gcal_src/icon.icns',
 					zip: true
 				},
-				src: ['./gmail_src/**/*']
+				src: ['./gcal_src/**/*']
 			},
 			google_apps: {
 				options: {
